@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://capdepontromain-stack.github.io/levinday/sitemap.xml
+Sitemap: https://levinday.re/sitemap.xml

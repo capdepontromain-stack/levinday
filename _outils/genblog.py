@@ -10,7 +10,7 @@ Puis git add/commit/push. Les dossiers _articles et _outils ne sont pas publiés
 """
 import json, os, glob, html, datetime
 
-BASE = "https://capdepontromain-stack.github.io/levinday/"
+BASE = "https://levinday.re/"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MOIS = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"]
 
