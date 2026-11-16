@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Le Vinday | Traiteur mauricien et créole à Saint-Paul, La Réunion</title>
-<meta name="description" content="Le Vinday, traiteur mauricien à Saint-Paul : briani, mine frites, riz frit, chop suey, carris, farata, dholl puri et spécialités réunionnaises, buffets et box repas pour entreprises, événements et particuliers, de 10 à 400 personnes. Petits prix adaptés à votre budget, livraison sur toute l'île.">
+<title>Le Vinday | Traiteur à Saint-Paul, Ouest de La Réunion : box repas et livraison</title>
+<meta name="description" content="Le Vinday, traiteur dans l'Ouest de La Réunion (Saint-Paul, Saint-Gilles) : livraison de repas en entreprise et à domicile, box repas, buffets. Briani, mine frites, riz frit, chop suey, carris, farata, dholl puri et spécialités réunionnaises, buffets et box repas pour entreprises, événements et particuliers, de 10 à 400 personnes. Petits prix adaptés à votre budget, livraison sur toute l'île.">
 <meta name="theme-color" content="#1A206D">
 <meta property="og:title" content="Le Vinday | Traiteur mauricien à La Réunion">
 <meta property="og:description" content="Mine frites, riz frit, buffets et box repas livrés partout sur l'île, de 10 à 400 personnes. Petits prix, adaptés à votre budget.">
@@ -215,6 +215,10 @@ footer a{color:var(--yellow)}
 .lb{position:fixed;inset:0;background:rgba(10,12,40,.93);display:none;align-items:center;justify-content:center;z-index:99;padding:20px;cursor:zoom-out}
 .lb.on{display:flex}.lb img{max-height:90vh;border-radius:14px}
 .rv{opacity:0;transform:translateY(26px);transition:opacity .8s,transform .8s}.rv.in{opacity:1;transform:none}
+.liv3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:36px}.liv3 div{background:#fff;border-radius:20px;padding:24px}.liv3 h3{font-family:Outfit;font-weight:800;font-size:1.15rem;color:var(--navy);margin-bottom:8px}.liv3 p{margin:0;color:var(--muted)}
+.bz{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.bz a{background:#fff;border-radius:22px;overflow:hidden;text-decoration:none;transition:.25s;box-shadow:0 10px 30px -18px rgba(17,21,74,.4)}.bz a:hover{transform:translateY(-4px)}.bz img{width:100%;aspect-ratio:16/10;object-fit:cover}.bz span{display:inline-block;margin:18px 22px 0;background:var(--yellow);color:var(--navy);font-weight:700;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;padding:4px 12px;border-radius:99px}.bz h3{font-family:Outfit;font-weight:800;font-size:1.2rem;color:var(--navy);margin:12px 22px 24px;line-height:1.25}
+.refs{background:var(--paper);padding:26px 0;text-align:center;font-size:1.05rem;color:var(--navy)}.refs span{color:var(--muted)}.refs a{color:var(--red);font-weight:700;margin-left:6px}
+@media(max-width:860px){.liv3,.bz{grid-template-columns:1fr}}
 @media(max-width:1000px){.mgrid{grid-template-columns:1fr 1fr}.b4{grid-template-columns:1fr 1fr}.dishes{grid-template-columns:repeat(2,1fr)}.strip{grid-template-columns:1fr}.pattern{height:70px}.pattern.r{display:none}.qty{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:860px){
 nav ul{display:none}
@@ -242,6 +246,8 @@ footer{padding-bottom:100px}}
 {"@type":"Question","name":"Est-ce que c'est cher ?","acceptedAnswer":{"@type":"Answer","text":"Nos prix sont doux et nous nous adaptons à votre budget : de la simple barquette au repas complet avec entrée, plat, dessert et boissons. Demandez un devis gratuit."}},
 {"@type":"Question","name":"Proposez-vous des repas végétariens ou adaptés à un régime ?","acceptedAnswer":{"@type":"Answer","text":"Oui : végétarien, végétalien, sans porc, allergies ou autres régimes, nous adaptons le menu. Précisez-le à la commande."}},{"@type":"Question","name":"Proposez-vous des boissons et de l'alcool ?","acceptedAnswer":{"@type":"Answer","text":"Oui, nous fournissons les boissons, avec ou sans alcool : Le Vinday est titulaire de la licence IV pour servir de l'alcool."}},{"@type":"Question","name":"Jusqu'à combien de personnes pouvez-vous servir ?","acceptedAnswer":{"@type":"Answer","text":"De 10 à 400 personnes, partout à La Réunion."}},
 {"@type":"Question","name":"Travaillez-vous pour les particuliers ?","acceptedAnswer":{"@type":"Answer","text":"Oui : anniversaires, soirées entre amis, pique-niques, réunions de famille, dès 10 repas."}},
+{"@type":"Question","name":"Fournissez-vous la vaisselle ?","acceptedAnswer":{"@type":"Answer","text":"Oui, si vous le souhaitez : pour un repas avec entrée, plat et dessert, nous apportons les assiettes et les couverts, en vraie vaisselle ou en jetable."}},
+{"@type":"Question","name":"Livrez-vous les repas en entreprise et à domicile ?","acceptedAnswer":{"@type":"Answer","text":"Oui : box repas et plateaux pour les déjeuners d'équipe, repas livrés à domicile ou sur la plage. Depuis Saint-Paul, nous livrons tout l'Ouest de La Réunion et toute l'île."}},
 {"@type":"Question","name":"Quelle cuisine proposez-vous ?","acceptedAnswer":{"@type":"Answer","text":"Toute la cuisine de l'île Maurice : briani, mine frites, riz frit, chop suey poulet et poisson, carris mauriciens, farata et dholl puri, avec aussi des plats réunionnais et créoles."}},
 {"@type":"Question","name":"Faites-vous des buffets et des cocktails ?","acceptedAnswer":{"@type":"Answer","text":"Oui : petits pains garnis, mini pizzas, feuilletés, pilons et brochettes panés, plateaux de fruits. Composez votre buffet avec nous."}}]}
 </script>
@@ -250,7 +256,7 @@ footer{padding-bottom:100px}}
 <div class="flag"></div>
 <header><div class="wrap nav">
 <a href="#" class="brand"><img src="images/logo-le-vinday.svg" width="48" height="48" alt="Logo Le Vinday"><span>LE VINDAY</span></a>
-<nav><ul><li><a href="#specialites">Spécialités</a></li><li><a href="#formules">Commander</a></li><li><a href="#carte">Buffets</a></li><li><a href="#livraison">Livraison</a></li><li><a href="#faq">Questions</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+<nav><ul><li><a href="#specialites">Spécialités</a></li><li><a href="#formules">Commander</a></li><li><a href="#carte">Buffets</a></li><li><a href="#livraison">Livraison</a></li><li><a href="blog/">Blog</a></li><li><a href="#faq">Questions</a></li><li><a href="#contact">Contact</a></li></ul></nav>
 <a class="btn btn-y" href="tel:+262692270237">📞 06 92 27 02 37</a>
 </div></header>
 
@@ -303,7 +309,6 @@ footer{padding-bottom:100px}}
 <article class="m rv"><img src="images/farata-mauricien-traiteur-reunion.jpg" width="1000" height="800" alt="Farata" loading="lazy"><div><h3>Farata</h3><p>La galette feuilletée à garnir de carri.</p></div></article>
 <article class="m rv"><img src="images/dholl-puri-mauricien-traiteur-reunion.jpg" width="1000" height="793" alt="Dholl puri" loading="lazy"><div><h3>Dholl puri</h3><p>La galette fourrée au pois cassé, star de la street food mauricienne.</p></div></article>
 </div>
-<p class="illu">Photos d'illustration. Les photos de nos propres plats arrivent bientôt.</p>
 </div></section>
 
 <!-- Commande guidée -->
@@ -354,6 +359,8 @@ footer{padding-bottom:100px}}
 <button type="button" class="o" data-o="Dessert">🍍 Dessert</button>
 <button type="button" class="o" data-o="Boissons">🥤 Boissons</button>
 <button type="button" class="o" data-o="Alcool">🍷 Alcool</button>
+<button type="button" class="o" data-o="Vaisselle (vraies assiettes et couverts)">🍽️ Vraie vaisselle</button>
+<button type="button" class="o" data-o="Vaisselle jetable">♻️ Vaisselle jetable</button>
 <button type="button" class="o" data-o="Végétarien">🌱 Végétarien</button>
 <button type="button" class="o" data-o="Autre régime (à préciser)">✋ Autre régime</button>
 </div>
@@ -381,7 +388,7 @@ footer{padding-bottom:100px}}
 <div class="title rv"><span class="bar">Selon votre budget</span><h2>De la barquette<span class="script">au repas complet</span></h2><p>Pas cher et sur mesure : vous choisissez ce que vous voulez, on s'adapte à votre budget. De 10 à 400 personnes, livré partout sur l'île.</p></div>
 <div class="b4">
 <div class="bc rv" style="--c:var(--green)"><span class="ic">🥡</span><h3>Simple barquette</h3><p>Un plat chaud, généreux, en barquette individuelle. La solution la plus économique pour nourrir tout le monde.</p></div>
-<div class="bc rv" style="--c:var(--red)"><span class="ic">🍽️</span><h3>Entrée, plat, dessert</h3><p>Le repas complet, à la mauricienne et à la réunionnaise, pour les déjeuners et les grandes occasions.</p></div>
+<div class="bc rv" style="--c:var(--red)"><span class="ic">🍽️</span><h3>Entrée, plat, dessert</h3><p>Le repas complet, à la mauricienne et à la réunionnaise. Avec la vaisselle si vous voulez : vraies assiettes et couverts, ou vaisselle jetable.</p></div>
 <div class="bc rv" style="--c:var(--blue)"><span class="ic">🍷</span><h3>Boissons et alcool</h3><p>Softs, jus et boissons alcoolisées : Le Vinday est titulaire de la licence IV pour servir de l'alcool.</p></div>
 <div class="bc rv" style="--c:var(--yellow)"><span class="ic">🌱</span><h3>Tous les régimes</h3><p>Végétarien, végétalien, sans porc, allergies : dites-nous, on adapte le menu à chaque convive.</p></div>
 </div>
@@ -404,9 +411,11 @@ footer{padding-bottom:100px}}
 <div class="rv"><strong>3</strong><span>Cuisines</span><p>Mauricienne, créole et chinoise, réunies à table.</p></div>
 </div></div>
 
+<div class="refs rv"><div class="wrap"><span>Ils ont choisi Le Vinday pour leurs événements :</span> <b>Pull Up Événements</b> · <b>la MIO</b> (Mission Intercommunale de l'Ouest) · <b>le Campus des experts-comptables</b> <a href="blog/clients-evenementiel-le-vinday/">Lire l'article →</a></div></div>
+
 <!-- Carte -->
 <section id="carte"><div class="wrap">
-<div class="title rv"><span class="bar">Buffets et cocktails</span><h2>Sorti de<span class="script">nos cuisines</span></h2><p>De vraies photos de nos préparations pour buffets, cocktails et repas d'équipe. La carte évolue : demandez-nous le menu du moment.</p></div>
+<div class="title rv"><span class="bar">Buffets et cocktails</span><h2>Buffets<span class="script">et petits plats</span></h2><p>Nos préparations pour buffets, cocktails et repas d'équipe. La carte évolue : demandez-nous le menu du moment.</p></div>
 <div class="dishes">
 <div class="dish rv"><div class="ph"><img src="images/plateau-cuisine-mauricienne-riz-carri-reunion.jpg" width="800" height="900" alt="Assiette mauricienne riz et carris" loading="lazy"></div><div class="t"><h3>Assiette mauricienne</h3><p>Riz, carris, légumes sautés et beignet.</p></div></div>
 <div class="dish rv"><div class="ph"><img src="images/box-repas-mauricien-livre-reunion.jpg" width="797" height="900" alt="Box repas" loading="lazy"></div><div class="t"><h3>Box repas</h3><p>La box complète des déjeuners d'équipe.</p></div></div>
@@ -433,8 +442,20 @@ footer{padding-bottom:100px}}
 
 <!-- Livraison -->
 <section id="livraison"><div class="wrap">
-<div class="title rv"><span class="bar">Livraison</span><h2>De Saint-Paul<span class="script">à toute l'île</span></h2><p>Notre cuisine est à Bernica, dans les hauts de Saint-Gilles. Nous livrons partout à La Réunion, de 10 à 400 personnes.</p></div>
+<div class="title rv"><span class="bar">Livraison</span><h2>De Saint-Paul<span class="script">à toute l'île</span></h2><p>Notre cuisine est à Bernica, dans les hauts de Saint-Gilles. Traiteur de l'Ouest de La Réunion, nous livrons partout sur l'île, de 10 à 400 personnes.</p></div>
+<div class="liv3 rv"><div><h3>🏢 Livraison en entreprise</h3><p>Box repas et plateaux repas livrés au bureau, sur le chantier ou en salle de réunion, à l'heure du déjeuner.</p></div><div><h3>🏠 Livraison à domicile</h3><p>Anniversaire, repas de famille, soirée entre amis : vos plats mauriciens livrés chez vous, prêts à servir.</p></div><div><h3>🏖️ Sur la plage</h3><p>Pique-nique, fête ou sortie d'équipe : on livre aussi les repas au bord de l'eau, dans l'Ouest et ailleurs.</p></div></div>
 <div class="chips rv"><span class="hl">Saint-Paul</span><span>Saint-Gilles</span><span>Saint-Leu</span><span>Le Port</span><span>La Possession</span><span>Saint-Denis</span><span>Sainte-Marie</span><span>Saint-André</span><span>Saint-Benoît</span><span>Saint-Pierre</span><span>Le Tampon</span><span>Saint-Louis</span><span class="hl">Et partout ailleurs</span></div>
+</div></section>
+
+<!-- Blog -->
+<section class="blogz" style="padding-top:0"><div class="wrap">
+<div class="title rv"><span class="bar">Le blog</span><h2>Recettes<span class="script">et bons plans</span></h2><p>Le briani, les box repas, les pique-niques sur la plage : nos conseils de traiteur.</p></div>
+<div class="bz">
+<a class="rv" href="blog/recette-briani-mauricien/"><img src="images/briani-mauricien-traiteur-reunion.jpg" width="1000" height="800" alt="Briani mauricien" loading="lazy"><span>Recette</span><h3>Comment réussir un bon briani mauricien</h3></a>
+<a class="rv" href="blog/box-repas-entreprise-ouest-reunion/"><img src="images/box-repas-mauricien-livre-reunion.jpg" width="797" height="900" alt="Box repas" loading="lazy"><span>Entreprises</span><h3>Box repas en entreprise dans l'Ouest</h3></a>
+<a class="rv" href="blog/repas-livre-plage-reunion/"><img src="images/plateau-fruits-tropicaux-buffet-reunion.jpg" width="797" height="900" alt="Repas sur la plage" loading="lazy"><span>Bons plans</span><h3>Un repas livré sur la plage</h3></a>
+</div>
+<p style="text-align:center;margin-top:30px"><a class="btn btn-o" href="blog/">Tous les articles</a></p>
 </div></section>
 
 <!-- FAQ -->
@@ -445,6 +466,8 @@ footer{padding-bottom:100px}}
 <details><summary>Est-ce que c'est cher ?</summary><p>Non : nos prix sont doux et nous nous adaptons à votre budget, de la simple barquette au repas complet avec entrée, plat, dessert et boissons. Le devis est gratuit.</p></details>
 <details><summary>Jusqu'à combien de personnes pouvez-vous servir ?</summary><p>De 10 à 400 personnes, partout à La Réunion.</p></details>
 <details><summary>Proposez-vous des boissons et de l'alcool ?</summary><p>Oui, nous fournissons les boissons, avec ou sans alcool : Le Vinday est titulaire de la licence IV pour servir de l'alcool. <em>L'abus d'alcool est dangereux pour la santé, à consommer avec modération.</em></p></details>
+<details><summary>Fournissez-vous la vaisselle ?</summary><p>Oui, si vous le souhaitez : pour un repas avec entrée, plat et dessert, nous apportons les assiettes et les couverts, en vraie vaisselle ou en jetable. Pour une simple barquette, tout est prêt à manger.</p></details>
+<details><summary>Livrez-vous les repas en entreprise et à domicile ?</summary><p>Oui : box repas et plateaux pour vos déjeuners d'équipe au bureau, repas livrés à domicile pour vos fêtes, et même sur la plage pour un pique-nique. Depuis Saint-Paul, nous livrons tout l'Ouest (Saint-Gilles, Le Port, La Possession, Saint-Leu, Trois-Bassins) et toute l'île.</p></details>
 <details><summary>Quelle cuisine proposez-vous ?</summary><p>Toute la cuisine de l'île Maurice : briani, mine frites, riz frit, chop suey poulet et poisson, carris mauriciens (carri poulet…), farata et dholl puri. Avec aussi des plats réunionnais et créoles.</p></details>
 <details><summary>Faites-vous des buffets et des cocktails ?</summary><p>Oui : petits pains garnis, mini pizzas, feuilletés, pilons et brochettes panés, plateaux de fruits. Composez votre buffet avec nous.</p></details>
 <details><summary>Proposez-vous des repas végétariens ou adaptés à un régime ?</summary><p>Oui : végétarien, végétalien, sans porc, allergies ou autres régimes, nous adaptons le menu. Précisez-le simplement à la commande.</p></details>
@@ -464,7 +487,7 @@ footer{padding-bottom:100px}}
 
 <footer><div class="wrap">
 <a href="#" class="brand"><img src="images/logo-le-vinday.svg" width="60" height="60" alt="Le Vinday"><span style="color:#fff">LE VINDAY<br><small style="font-family:Outfit;font-size:.8rem;color:#b9bcd9;letter-spacing:0">Traiteur mauricien · Saint-Paul, La Réunion</small></span></a>
-<div><a href="https://www.facebook.com/levindaysnack" rel="noopener">Facebook</a> · <a href="https://www.instagram.com/levindaysnack" rel="noopener">Instagram</a><br>levinday974@gmail.com · 06 92 27 02 37<br><small>L'abus d'alcool est dangereux pour la santé, à consommer avec modération.</small><br><small>Photos d'illustration : Unsplash ; dholl puri : Yoann74, CC BY-SA 4.0, Wikimedia Commons.</small></div>
+<div><a href="https://www.facebook.com/levindaysnack" rel="noopener">Facebook</a> · <a href="https://www.instagram.com/levindaysnack" rel="noopener">Instagram</a><br>levinday974@gmail.com · 06 92 27 02 37<br><small>L'abus d'alcool est dangereux pour la santé, à consommer avec modération.</small><br><small>Crédits photos : Unsplash ; dholl puri : Yoann74, CC BY-SA 4.0, Wikimedia Commons.</small></div>
 </div></footer>
 
 <div class="callbar"><a class="a" href="tel:+262692270237">📞 Appeler</a><a class="b" href="https://wa.me/262692270237">💬 WhatsApp</a></div>
