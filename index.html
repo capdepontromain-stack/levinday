@@ -108,7 +108,7 @@ h2 em{color:var(--red)}
 .ticks li{display:flex;gap:12px;align-items:flex-start}
 .ticks li:before{content:"✓";flex:none;width:26px;height:26px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;font-weight:700;font-size:.85rem;margin-top:2px}
 /* galerie */
-.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:14px;margin-top:46px}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;grid-auto-flow:dense;gap:14px;margin-top:46px}
 .gal figure{margin:0;border-radius:18px;overflow:hidden;position:relative;cursor:zoom-in}
 .gal img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
 .gal figure:hover img{transform:scale(1.07)}
