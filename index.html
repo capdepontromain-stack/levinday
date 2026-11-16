@@ -4,15 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Le Vinday | Traiteur mauricien et créole à Saint-Paul, La Réunion</title>
-<meta name="description" content="Le Vinday, traiteur mauricien à Saint-Paul : mine frites, riz frit, spécialités mauriciennes et réunionnaises, buffets et box repas pour entreprises, événements et particuliers, de 10 à 400 personnes. Petits prix adaptés à votre budget, livraison sur toute l'île.">
+<meta name="description" content="Le Vinday, traiteur mauricien à Saint-Paul : briani, mine frites, riz frit, chop suey, carris, farata, dholl puri et spécialités réunionnaises, buffets et box repas pour entreprises, événements et particuliers, de 10 à 400 personnes. Petits prix adaptés à votre budget, livraison sur toute l'île.">
 <meta name="theme-color" content="#1A206D">
 <meta property="og:title" content="Le Vinday | Traiteur mauricien à La Réunion">
 <meta property="og:description" content="Mine frites, riz frit, buffets et box repas livrés partout sur l'île, de 10 à 400 personnes. Petits prix, adaptés à votre budget.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
-<meta property="og:image" content="https://capdepontromain-stack.github.io/levinday/images/plateau-cuisine-mauricienne-riz-carri-reunion.jpg">
+<meta property="og:image" content="https://capdepontromain-stack.github.io/levinday/images/briani-mauricien-traiteur-reunion.jpg">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="preload" as="image" href="images/plateau-cuisine-mauricienne-riz-carri-reunion.jpg">
+<link rel="preload" as="image" href="images/briani-mauricien-traiteur-reunion.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Yellowtail&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -83,6 +83,19 @@ section{padding:96px 0}
 .title h2{font-family:'Bowlby One';text-transform:uppercase;font-size:clamp(2rem,5vw,3.4rem);color:var(--navy);margin:18px 0 0;line-height:1}
 .title h2 .script{display:block;color:var(--red);font-size:.8em;margin-top:.05em}
 .title p{color:var(--muted);font-size:1.1rem;margin:18px 0 0}
+.mau{background:var(--navy);color:#fff}
+.mau .title h2{color:#fff}.mau .title p{color:#c3c7ee}.mau .title .bar{background:var(--yellow);color:var(--navy)}
+.mgrid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:250px;gap:16px}
+.m{position:relative;border-radius:22px;overflow:hidden;isolation:isolate;display:flex;align-items:flex-end}
+.m img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .7s}
+.m:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(10,12,40,.9));z-index:-1}
+.m:hover img{transform:scale(1.07)}
+.m div{padding:18px 20px}
+.m h3{font-family:'Bowlby One';text-transform:uppercase;font-size:1.35rem;color:#fff;line-height:1}
+.m p{margin:6px 0 0;color:#dfe1f7;font-size:.9rem;line-height:1.4}
+.m small{display:inline-block;background:var(--red);color:#fff;font-weight:700;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;padding:4px 12px;border-radius:99px;margin-bottom:10px}
+.m1{grid-column:span 2;grid-row:span 2}.m1 h3{font-size:3rem}.m1 p{font-size:1.05rem;max-width:420px}.m1 div{padding:30px}
+.illu{text-align:center;color:#9aa0d8;font-size:.8rem;font-style:italic;margin:22px 0 0}
 /* formules (façon Qilibri) */
 .order{background:var(--paper)}
 .stepl{display:flex;align-items:center;gap:14px;font-family:'Bowlby One';font-size:1.35rem;color:var(--navy);text-transform:uppercase;margin:0 0 22px}
@@ -202,7 +215,7 @@ footer a{color:var(--yellow)}
 .lb{position:fixed;inset:0;background:rgba(10,12,40,.93);display:none;align-items:center;justify-content:center;z-index:99;padding:20px;cursor:zoom-out}
 .lb.on{display:flex}.lb img{max-height:90vh;border-radius:14px}
 .rv{opacity:0;transform:translateY(26px);transition:opacity .8s,transform .8s}.rv.in{opacity:1;transform:none}
-@media(max-width:1000px){.b4{grid-template-columns:1fr 1fr}.dishes{grid-template-columns:repeat(2,1fr)}.strip{grid-template-columns:1fr}.pattern{height:70px}.pattern.r{display:none}.qty{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:1000px){.mgrid{grid-template-columns:1fr 1fr}.b4{grid-template-columns:1fr 1fr}.dishes{grid-template-columns:repeat(2,1fr)}.strip{grid-template-columns:1fr}.pattern{height:70px}.pattern.r{display:none}.qty{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:860px){
 nav ul{display:none}
 .special .wrap,.formules,.typ,.reassure,.specials,.form{grid-template-columns:1fr}
@@ -216,12 +229,12 @@ section{padding:66px 0}.hero{min-height:560px}
 .callbar a{flex:1;text-align:center;padding:13px;border-radius:99px;font-weight:700;text-decoration:none}
 .callbar .a{background:var(--red);color:#fff}.callbar .b{background:var(--green);color:#fff}
 footer{padding-bottom:100px}}
-@media(max-width:560px){.b4{grid-template-columns:1fr}.special h1{font-size:2.35rem}.nav .btn{display:none}.f h3{min-height:80px}.dishes{grid-template-columns:1fr 1fr;gap:12px}.dish h3{font-size:1.4rem}.dish p{display:none}
+@media(max-width:560px){.mgrid{grid-auto-rows:200px}.m1{grid-row:span 2}.m1 h3{font-size:2.2rem}.m p{display:none}.m1 p{display:block}.b4{grid-template-columns:1fr}.special h1{font-size:2.35rem}.nav .btn{display:none}.f h3{min-height:80px}.dishes{grid-template-columns:1fr 1fr;gap:12px}.dish h3{font-size:1.4rem}.dish p{display:none}
 .f h3{font-size:1.25rem}.f .ph{width:120px;height:120px}.recap .btns{width:100%}.recap .btn{flex:1}}
 @media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}.dishwheel .ring{animation:none}}
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FoodEstablishment","name":"Le Vinday","logo":"https://capdepontromain-stack.github.io/levinday/images/logo-le-vinday.svg","image":"https://capdepontromain-stack.github.io/levinday/images/plateau-cuisine-mauricienne-riz-carri-reunion.jpg","description":"Traiteur mauricien, créole et chinois à Saint-Paul, La Réunion. Repas, buffets et box pour entreprises, événements et particuliers, livraison sur toute l'île de 10 à 400 personnes. Boissons avec et sans alcool, tous régimes alimentaires.","servesCuisine":["Mauricienne","Créole","Chinoise"],"priceRange":"€","telephone":"+262692270237","email":"levinday974@gmail.com","address":{"@type":"PostalAddress","streetAddress":"140 route du Vieux Flamboyant, Bernica","addressLocality":"Saint-Paul","postalCode":"97435","addressCountry":"RE"},"geo":{"@type":"GeoCoordinates","latitude":-21.0383,"longitude":55.2792},"areaServed":{"@type":"AdministrativeArea","name":"La Réunion"},"sameAs":["https://www.facebook.com/levindaysnack","https://www.instagram.com/levindaysnack"]}
+{"@context":"https://schema.org","@type":"FoodEstablishment","name":"Le Vinday","logo":"https://capdepontromain-stack.github.io/levinday/images/logo-le-vinday.svg","image":"https://capdepontromain-stack.github.io/levinday/images/plateau-cuisine-mauricienne-riz-carri-reunion.jpg","description":"Traiteur mauricien, créole et chinois à Saint-Paul, La Réunion. Repas, buffets et box pour entreprises, événements et particuliers, livraison sur toute l'île de 10 à 400 personnes. Boissons avec et sans alcool, tous régimes alimentaires.","servesCuisine":["Mauricienne","Créole","Chinoise"],"hasMenu":{"@type":"Menu","hasMenuSection":{"@type":"MenuSection","name":"Spécialités mauriciennes","hasMenuItem":[{"@type":"MenuItem","name":"Briani"},{"@type":"MenuItem","name":"Mine frites"},{"@type":"MenuItem","name":"Riz frit"},{"@type":"MenuItem","name":"Chop suey poulet"},{"@type":"MenuItem","name":"Chop suey poisson"},{"@type":"MenuItem","name":"Carri poulet"},{"@type":"MenuItem","name":"Farata"},{"@type":"MenuItem","name":"Dholl puri"}]}},"priceRange":"€","telephone":"+262692270237","email":"levinday974@gmail.com","address":{"@type":"PostalAddress","streetAddress":"140 route du Vieux Flamboyant, Bernica","addressLocality":"Saint-Paul","postalCode":"97435","addressCountry":"RE"},"geo":{"@type":"GeoCoordinates","latitude":-21.0383,"longitude":55.2792},"areaServed":{"@type":"AdministrativeArea","name":"La Réunion"},"sameAs":["https://www.facebook.com/levindaysnack","https://www.instagram.com/levindaysnack"]}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
@@ -229,7 +242,7 @@ footer{padding-bottom:100px}}
 {"@type":"Question","name":"Est-ce que c'est cher ?","acceptedAnswer":{"@type":"Answer","text":"Nos prix sont doux et nous nous adaptons à votre budget : de la simple barquette au repas complet avec entrée, plat, dessert et boissons. Demandez un devis gratuit."}},
 {"@type":"Question","name":"Proposez-vous des repas végétariens ou adaptés à un régime ?","acceptedAnswer":{"@type":"Answer","text":"Oui : végétarien, végétalien, sans porc, allergies ou autres régimes, nous adaptons le menu. Précisez-le à la commande."}},{"@type":"Question","name":"Proposez-vous des boissons et de l'alcool ?","acceptedAnswer":{"@type":"Answer","text":"Oui, nous fournissons les boissons, avec ou sans alcool : Le Vinday dispose de la licence pour servir de l'alcool."}},{"@type":"Question","name":"Jusqu'à combien de personnes pouvez-vous servir ?","acceptedAnswer":{"@type":"Answer","text":"De 10 à 400 personnes, partout à La Réunion."}},
 {"@type":"Question","name":"Travaillez-vous pour les particuliers ?","acceptedAnswer":{"@type":"Answer","text":"Oui : anniversaires, soirées entre amis, pique-niques, réunions de famille, dès 10 repas."}},
-{"@type":"Question","name":"Quelle cuisine proposez-vous ?","acceptedAnswer":{"@type":"Answer","text":"De la cuisine mauricienne avant tout, comme les mine frites et le riz frit, avec aussi des plats réunionnais, créoles et chinois."}},
+{"@type":"Question","name":"Quelle cuisine proposez-vous ?","acceptedAnswer":{"@type":"Answer","text":"Toute la cuisine de l'île Maurice : briani, mine frites, riz frit, chop suey poulet et poisson, carris mauriciens, farata et dholl puri, avec aussi des plats réunionnais et créoles."}},
 {"@type":"Question","name":"Faites-vous des buffets et des cocktails ?","acceptedAnswer":{"@type":"Answer","text":"Oui : petits pains garnis, mini pizzas, feuilletés, pilons et brochettes panés, plateaux de fruits. Composez votre buffet avec nous."}}]}
 </script>
 </head>
@@ -237,7 +250,7 @@ footer{padding-bottom:100px}}
 <div class="flag"></div>
 <header><div class="wrap nav">
 <a href="#" class="brand"><img src="images/logo-le-vinday.svg" width="48" height="48" alt="Logo Le Vinday"><span>LE VINDAY</span></a>
-<nav><ul><li><a href="#formules">Commander</a></li><li><a href="#carte">La carte</a></li><li><a href="#livraison">Livraison</a></li><li><a href="#faq">Questions</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+<nav><ul><li><a href="#specialites">Spécialités</a></li><li><a href="#formules">Commander</a></li><li><a href="#carte">Buffets</a></li><li><a href="#livraison">Livraison</a></li><li><a href="#faq">Questions</a></li><li><a href="#contact">Contact</a></li></ul></nav>
 <a class="btn btn-y" href="tel:+262692270237">📞 06 92 27 02 37</a>
 </div></header>
 
@@ -245,19 +258,19 @@ footer{padding-bottom:100px}}
 <section class="special"><div class="wrap">
 <div>
 <h1 class="big">Cuisine mauricienne<span class="script">faite maison</span></h1>
-<p>Mine frites, riz frit, carris, buffets et box repas. Des petits prix, un menu adapté à votre budget, de 10 à 400 personnes, livrés partout à La Réunion.</p>
-<div class="cta"><a class="btn btn-r" href="#formules">Composer ma commande</a><a class="btn btn-o" href="#carte">Voir la carte</a></div>
+<p>Briani, mine frites, riz frit, chop suey, carris, farata, dholl puri : tout ce qui se mange à l'île Maurice. Des petits prix, un menu adapté à votre budget, de 10 à 400 personnes, livrés partout à La Réunion.</p>
+<div class="cta"><a class="btn btn-r" href="#formules">Composer ma commande</a><a class="btn btn-o" href="#specialites">Nos spécialités</a></div>
 </div>
 <div class="dishwheel" aria-hidden="true">
-<svg class="ring" viewBox="0 0 400 400"><defs><path id="circ" d="M200,200 m-178,0 a178,178 0 1,1 356,0 a178,178 0 1,1 -356,0"/></defs><text><textPath href="#circ">mine frites • riz frit • carri • fait maison • saveurs de Maurice • </textPath></text></svg>
-<div class="plate"><img src="images/plateau-cuisine-mauricienne-riz-carri-reunion.jpg" width="800" height="900" alt=""></div>
+<svg class="ring" viewBox="0 0 400 400"><defs><path id="circ" d="M200,200 m-178,0 a178,178 0 1,1 356,0 a178,178 0 1,1 -356,0"/></defs><text><textPath href="#circ">briani • mine frites • riz frit • chop suey • farata • dholl puri • </textPath></text></svg>
+<div class="plate"><img src="images/briani-mauricien-traiteur-reunion.jpg" width="1000" height="800" alt=""></div>
 <div class="tag">petits prix</div>
 </div>
 </div></section>
 
 <!-- Héros photo plein écran -->
 <section class="hero" style="padding:0">
-<img src="images/box-repas-mauricien-livre-reunion.jpg" width="797" height="900" alt="Box repas du Vinday" fetchpriority="high">
+<img src="images/mine-frites-mauricien-traiteur-reunion.jpg" width="1000" height="800" alt="Mine frites mauriciennes" fetchpriority="high">
 <div class="wrap">
 <h2 class="big">Le Vinday<span class="script">traiteur mauricien à Saint-Paul</span></h2>
 <p>Entreprises, événements, particuliers : on cuisine, on livre, vous vous régalez. De 10 à 400 personnes, partout sur l'île.</p>
@@ -277,6 +290,21 @@ footer{padding-bottom:100px}}
 </div>
 <div class="pattern r" aria-hidden="true"><svg viewBox="0 0 220 160" preserveAspectRatio="xMidYMid slice"><g font-family="Bowlby One" font-size="30"><text x="-30" y="34" fill="#1A206D">RIZ FRIT RIZ</text><text x="-5" y="72" fill="#EA2839">RIZ FRIT RIZ</text><text x="-40" y="110" fill="#1A206D">RIZ FRIT RIZ</text><text x="-15" y="148" fill="#00A551">RIZ FRIT RIZ</text></g></svg></div>
 </div>
+
+<!-- Spécialités mauriciennes -->
+<section class="mau" id="specialites"><div class="wrap">
+<div class="title rv"><span class="bar">Nos spécialités</span><h2>Tout le goût<span class="script">de l'île Maurice</span></h2><p>Les grands classiques mauriciens, préparés maison comme là-bas, et livrés partout à La Réunion.</p></div>
+<div class="mgrid">
+<article class="m m1 rv"><img src="images/briani-mauricien-traiteur-reunion.jpg" width="1000" height="800" alt="Briani mauricien" loading="lazy"><div><small>Le plat de fête</small><h3>Briani</h3><p>Riz parfumé aux épices, cuit avec la viande et les pommes de terre : le roi des grandes tablées mauriciennes.</p></div></article>
+<article class="m rv"><img src="images/mine-frites-mauricien-traiteur-reunion.jpg" width="1000" height="800" alt="Mine frites" loading="lazy"><div><h3>Mine frites</h3><p>Nouilles sautées au wok, bien garnies.</p></div></article>
+<article class="m rv"><img src="images/riz-frit-mauricien-traiteur-reunion.jpg" width="1000" height="800" alt="Riz frit" loading="lazy"><div><h3>Riz frit</h3><p>Le riz sauté à la mauricienne.</p></div></article>
+<article class="m rv"><img src="images/chop-suey-poulet-traiteur-reunion.jpg" width="1000" height="800" alt="Chop suey poulet" loading="lazy"><div><h3>Chop suey</h3><p>Poulet ou poisson, légumes croquants sautés.</p></div></article>
+<article class="m rv"><img src="images/carri-poulet-mauricien-traiteur-reunion.jpg" width="1000" height="800" alt="Carri poulet mauricien" loading="lazy"><div><h3>Carris mauriciens</h3><p>Carri poulet et carris de saison, bien relevés.</p></div></article>
+<article class="m rv"><img src="images/farata-mauricien-traiteur-reunion.jpg" width="1000" height="800" alt="Farata" loading="lazy"><div><h3>Farata</h3><p>La galette feuilletée à garnir de carri.</p></div></article>
+<article class="m rv"><img src="images/dholl-puri-mauricien-traiteur-reunion.jpg" width="1000" height="793" alt="Dholl puri" loading="lazy"><div><h3>Dholl puri</h3><p>La galette fourrée au pois cassé, star de la street food mauricienne.</p></div></article>
+</div>
+<p class="illu">Photos d'illustration. Les photos de nos propres plats arrivent bientôt.</p>
+</div></section>
 
 <!-- Commande guidée -->
 <section class="order" id="formules"><div class="wrap">
@@ -301,9 +329,9 @@ footer{padding-bottom:100px}}
 <span class="foot"><span><small>Petits prix</small><strong class="soft">Selon votre budget</strong></span><span class="choose">Choisir</span></span>
 </button>
 <button type="button" class="f" data-f="Fête en famille">
-<span class="ph"><img src="images/plateau-cuisine-mauricienne-riz-carri-reunion.jpg" width="800" height="900" alt="" loading="lazy"></span>
+<span class="ph"><img src="images/briani-mauricien-traiteur-reunion.jpg" width="1000" height="800" alt="" loading="lazy"></span>
 <h3>Fête<span class="script">en famille</span></h3>
-<span class="desc">Les plats mauriciens et créoles que tout le monde aime, en grande quantité.</span>
+<span class="desc">Briani, mine frites, carris : les plats mauriciens que tout le monde aime, en grande quantité.</span>
 <span class="ideal">Idéal pour</span>
 <ul><li>Anniversaires</li><li>Soirées entre amis</li><li>Pique-niques</li></ul>
 <span class="foot"><span><small>Petits prix</small><strong class="soft">Selon votre budget</strong></span><span class="choose">Choisir</span></span>
@@ -365,7 +393,7 @@ footer{padding-bottom:100px}}
 <div class="title rv"><span class="bar">Votre buffet type</span><h2>De l'apéritif<span class="script">au dessert</span></h2></div>
 <div class="typ">
 <article class="rv"><div class="ph"><img src="images/feuilletes-maison-cocktail-traiteur-reunion.jpg" width="800" height="900" alt="Feuilletés maison" loading="lazy"></div><h3>Apéritif<span class="script">pour commencer</span></h3><p>Feuilletés dorés, mini pizzas, petits pains garnis et brochettes panées.</p></article>
-<article class="rv"><div class="ph"><img src="images/plateau-cuisine-mauricienne-riz-carri-reunion.jpg" width="800" height="900" alt="Assiette mauricienne" loading="lazy"></div><h3>Plat<span class="script">le cœur du repas</span></h3><p>Riz, carris, mine frites, riz frit et légumes sautés, à la mauricienne.</p></article>
+<article class="rv"><div class="ph"><img src="images/briani-mauricien-traiteur-reunion.jpg" width="1000" height="800" alt="Briani" loading="lazy"></div><h3>Plat<span class="script">le cœur du repas</span></h3><p>Briani, carris, mine frites, riz frit, chop suey, farata : à la mauricienne.</p></article>
 <article class="rv"><div class="ph"><img src="images/plateau-fruits-tropicaux-buffet-reunion.jpg" width="797" height="900" alt="Plateau de fruits" loading="lazy"></div><h3>Douceur<span class="script">pour finir</span></h3><p>Un grand plateau de fruits frais : pastèque, ananas, papaye, raisin, canne.</p></article>
 </div>
 </div></section>
@@ -378,7 +406,7 @@ footer{padding-bottom:100px}}
 
 <!-- Carte -->
 <section id="carte"><div class="wrap">
-<div class="title rv"><span class="bar">La carte</span><h2>Sorti de<span class="script">nos cuisines</span></h2><p>De vraies photos de nos préparations. La carte évolue : demandez-nous le menu du moment.</p></div>
+<div class="title rv"><span class="bar">Buffets et cocktails</span><h2>Sorti de<span class="script">nos cuisines</span></h2><p>De vraies photos de nos préparations pour buffets, cocktails et repas d'équipe. La carte évolue : demandez-nous le menu du moment.</p></div>
 <div class="dishes">
 <div class="dish rv"><div class="ph"><img src="images/plateau-cuisine-mauricienne-riz-carri-reunion.jpg" width="800" height="900" alt="Assiette mauricienne riz et carris" loading="lazy"></div><div class="t"><h3>Assiette mauricienne</h3><p>Riz, carris, légumes sautés et beignet.</p></div></div>
 <div class="dish rv"><div class="ph"><img src="images/box-repas-mauricien-livre-reunion.jpg" width="797" height="900" alt="Box repas" loading="lazy"></div><div class="t"><h3>Box repas</h3><p>La box complète des déjeuners d'équipe.</p></div></div>
@@ -390,9 +418,9 @@ footer{padding-bottom:100px}}
 <div class="dish rv"><div class="ph"><img src="images/plateau-fruits-tropicaux-buffet-reunion.jpg" width="797" height="900" alt="Plateau de fruits" loading="lazy"></div><div class="t"><h3>Plateau de fruits</h3><p>La fraîcheur des îles.</p></div></div>
 </div>
 <div class="specials">
-<div class="sp rv"><span class="ic">🍜</span><div><h3>Mine frites et riz frit</h3><p>Les grands classiques mauriciens, sautés au wok.</p></div></div>
+<div class="sp rv"><span class="ic">🍜</span><div><h3>Sino-mauricien</h3><p>Mine frites, riz frit, chop suey poulet et chop suey poisson.</p></div></div>
 <div class="sp rv"><span class="ic">🌱</span><div><h3>Végétarien et régimes</h3><p>Végétarien, végétalien, sans porc : personne n'est oublié à table.</p></div></div>
-<div class="sp rv"><span class="ic">🍛</span><div><h3>Créole et chinois</h3><p>La touche péi et les saveurs d'Asie.</p></div></div>
+<div class="sp rv"><span class="ic">🍛</span><div><h3>Carris et galettes</h3><p>Carris mauriciens, farata, dholl puri, et la touche créole péi.</p></div></div>
 </div>
 </div></section>
 
@@ -417,7 +445,7 @@ footer{padding-bottom:100px}}
 <details><summary>Est-ce que c'est cher ?</summary><p>Non : nos prix sont doux et nous nous adaptons à votre budget, de la simple barquette au repas complet avec entrée, plat, dessert et boissons. Le devis est gratuit.</p></details>
 <details><summary>Jusqu'à combien de personnes pouvez-vous servir ?</summary><p>De 10 à 400 personnes, partout à La Réunion.</p></details>
 <details><summary>Proposez-vous des boissons et de l'alcool ?</summary><p>Oui, nous fournissons les boissons, avec ou sans alcool : Le Vinday dispose de la licence pour servir de l'alcool. <em>L'abus d'alcool est dangereux pour la santé, à consommer avec modération.</em></p></details>
-<details><summary>Quelle cuisine proposez-vous ?</summary><p>De la cuisine mauricienne avant tout (mine frites, riz frit, carris), avec aussi des plats réunionnais, créoles et chinois.</p></details>
+<details><summary>Quelle cuisine proposez-vous ?</summary><p>Toute la cuisine de l'île Maurice : briani, mine frites, riz frit, chop suey poulet et poisson, carris mauriciens (carri poulet…), farata et dholl puri. Avec aussi des plats réunionnais et créoles.</p></details>
 <details><summary>Faites-vous des buffets et des cocktails ?</summary><p>Oui : petits pains garnis, mini pizzas, feuilletés, pilons et brochettes panés, plateaux de fruits. Composez votre buffet avec nous.</p></details>
 <details><summary>Proposez-vous des repas végétariens ou adaptés à un régime ?</summary><p>Oui : végétarien, végétalien, sans porc, allergies ou autres régimes, nous adaptons le menu. Précisez-le simplement à la commande.</p></details>
 <details><summary>Travaillez-vous pour les particuliers ?</summary><p>Oui : anniversaires, soirées, pique-niques, repas de famille, dès 10 repas. Une simple barquette ou un repas complet, selon votre budget.</p></details>
@@ -436,7 +464,7 @@ footer{padding-bottom:100px}}
 
 <footer><div class="wrap">
 <a href="#" class="brand"><img src="images/logo-le-vinday.svg" width="60" height="60" alt="Le Vinday"><span style="color:#fff">LE VINDAY<br><small style="font-family:Outfit;font-size:.8rem;color:#b9bcd9;letter-spacing:0">Traiteur mauricien · Saint-Paul, La Réunion</small></span></a>
-<div><a href="https://www.facebook.com/levindaysnack" rel="noopener">Facebook</a> · <a href="https://www.instagram.com/levindaysnack" rel="noopener">Instagram</a><br>levinday974@gmail.com · 06 92 27 02 37<br><small>L'abus d'alcool est dangereux pour la santé, à consommer avec modération.</small></div>
+<div><a href="https://www.facebook.com/levindaysnack" rel="noopener">Facebook</a> · <a href="https://www.instagram.com/levindaysnack" rel="noopener">Instagram</a><br>levinday974@gmail.com · 06 92 27 02 37<br><small>L'abus d'alcool est dangereux pour la santé, à consommer avec modération.</small><br><small>Photos d'illustration : Unsplash ; dholl puri : Yoann74, CC BY-SA 4.0, Wikimedia Commons.</small></div>
 </div></footer>
 
 <div class="callbar"><a class="a" href="tel:+262692270237">📞 Appeler</a><a class="b" href="https://wa.me/262692270237">💬 WhatsApp</a></div>
