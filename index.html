@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Le Vinday | Traiteur mauricien et créole à Saint-Paul, La Réunion</title>
-<meta name="description" content="Le Vinday, traiteur mauricien à Saint-Paul : mine frites, riz frit, spécialités mauriciennes et réunionnaises, buffets et box repas pour entreprises, événements et particuliers. Livraison sur toute l'île dès 10 repas, à partir de 9 €.">
+<meta name="description" content="Le Vinday, traiteur mauricien à Saint-Paul : mine frites, riz frit, spécialités mauriciennes et réunionnaises, buffets et box repas pour entreprises, événements et particuliers, de 10 à 400 personnes. Petits prix adaptés à votre budget, livraison sur toute l'île.">
 <meta name="theme-color" content="#1A206D">
 <meta property="og:title" content="Le Vinday | Traiteur mauricien à La Réunion">
-<meta property="og:description" content="Mine frites, riz frit, buffets et box repas livrés partout sur l'île dès 10 repas. À partir de 9 €.">
+<meta property="og:description" content="Mine frites, riz frit, buffets et box repas livrés partout sur l'île, de 10 à 400 personnes. Petits prix, adaptés à votre budget.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:image" content="https://capdepontromain-stack.github.io/levinday/images/plateau-cuisine-mauricienne-riz-carri-reunion.jpg">
@@ -102,6 +102,7 @@ section{padding:96px 0}
 .f .foot{margin-top:auto;padding-top:18px;border-top:1px solid #eee;display:flex;justify-content:space-between;align-items:flex-end;gap:10px}
 .f .foot small{display:block;color:var(--muted);font-size:.85rem}
 .f .foot strong{font-family:'Bowlby One';font-size:2rem;color:var(--navy);line-height:1}
+.f .foot strong.soft{font-family:Yellowtail;font-size:1.6rem;color:var(--red)}
 .f .foot strong span{font-family:Outfit;font-size:.9rem;font-weight:600;color:var(--muted)}
 .f .choose{border:2px solid var(--green);color:var(--green);padding:10px 18px;border-radius:12px;font-weight:700}
 .f.on .choose{background:var(--green);color:#fff}
@@ -113,6 +114,10 @@ section{padding:96px 0}
 .q .band{display:block;margin:-22px -16px 16px;padding:10px;border-radius:15px 15px 0 0;color:#fff;font-weight:700;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase}
 .q strong{display:block;font-family:'Bowlby One';font-size:2.1rem;color:var(--navy);line-height:1}
 .q small{color:var(--muted)}
+.opts{display:flex;flex-wrap:wrap;gap:12px}
+.o{font:inherit;font-weight:600;background:#fff;border:3px solid transparent;border-radius:99px;padding:12px 20px;cursor:pointer;color:var(--navy);box-shadow:0 8px 20px -16px rgba(17,21,74,.6);transition:.2s}
+.o:hover{transform:translateY(-2px)}.o.on{border-color:var(--green);background:#e9f7ef}
+.optnote{color:var(--muted);font-size:.92rem;margin:12px 0 0}
 .form{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
 .form label{font-weight:600;font-size:.9rem;color:var(--navy);display:grid;gap:6px}
 .form input,.form select{font:inherit;padding:14px 16px;border-radius:12px;border:2px solid #e3dccb;background:#fff;color:var(--ink);width:100%}
@@ -124,6 +129,14 @@ section{padding:96px 0}
 .reassure div{background:#fff;border-radius:18px;padding:24px;text-align:center}
 .reassure h3{font-weight:700;font-size:1.05rem;color:var(--navy);font-family:Outfit}
 .reassure p{margin:8px 0 0;color:var(--muted);font-size:.95rem}
+.budget{background:#fff}
+.b4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.bc{background:var(--paper);border-radius:22px;padding:28px 24px;border-top:8px solid var(--c);transition:.25s}
+.bc:hover{transform:translateY(-5px)}
+.bc .ic{font-size:2.4rem}
+.bc h3{font-family:'Bowlby One';text-transform:uppercase;color:var(--navy);font-size:1.2rem;margin:12px 0 8px;line-height:1.1}
+.bc p{margin:0;color:var(--muted);font-size:.96rem}
+.evin{text-align:center;color:var(--muted);font-size:.8rem;margin:26px 0 0;font-style:italic}
 /* buffet type (façon journée type) */
 .typ{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
 .typ article{text-align:center}
@@ -189,7 +202,7 @@ footer a{color:var(--yellow)}
 .lb{position:fixed;inset:0;background:rgba(10,12,40,.93);display:none;align-items:center;justify-content:center;z-index:99;padding:20px;cursor:zoom-out}
 .lb.on{display:flex}.lb img{max-height:90vh;border-radius:14px}
 .rv{opacity:0;transform:translateY(26px);transition:opacity .8s,transform .8s}.rv.in{opacity:1;transform:none}
-@media(max-width:1000px){.dishes{grid-template-columns:repeat(2,1fr)}.strip{grid-template-columns:1fr}.pattern{height:70px}.pattern.r{display:none}.qty{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:1000px){.b4{grid-template-columns:1fr 1fr}.dishes{grid-template-columns:repeat(2,1fr)}.strip{grid-template-columns:1fr}.pattern{height:70px}.pattern.r{display:none}.qty{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:860px){
 nav ul{display:none}
 .special .wrap,.formules,.typ,.reassure,.specials,.form{grid-template-columns:1fr}
@@ -203,18 +216,18 @@ section{padding:66px 0}.hero{min-height:560px}
 .callbar a{flex:1;text-align:center;padding:13px;border-radius:99px;font-weight:700;text-decoration:none}
 .callbar .a{background:var(--red);color:#fff}.callbar .b{background:var(--green);color:#fff}
 footer{padding-bottom:100px}}
-@media(max-width:560px){.special h1{font-size:2.35rem}.nav .btn{display:none}.f h3{min-height:80px}.dishes{grid-template-columns:1fr 1fr;gap:12px}.dish h3{font-size:1.4rem}.dish p{display:none}
+@media(max-width:560px){.b4{grid-template-columns:1fr}.special h1{font-size:2.35rem}.nav .btn{display:none}.f h3{min-height:80px}.dishes{grid-template-columns:1fr 1fr;gap:12px}.dish h3{font-size:1.4rem}.dish p{display:none}
 .f h3{font-size:1.25rem}.f .ph{width:120px;height:120px}.recap .btns{width:100%}.recap .btn{flex:1}}
 @media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}.dishwheel .ring{animation:none}}
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FoodEstablishment","name":"Le Vinday","logo":"https://capdepontromain-stack.github.io/levinday/images/logo-le-vinday.svg","image":"https://capdepontromain-stack.github.io/levinday/images/plateau-cuisine-mauricienne-riz-carri-reunion.jpg","description":"Traiteur mauricien, créole et chinois à Saint-Paul, La Réunion. Repas, buffets et box pour entreprises, événements et particuliers, livraison sur toute l'île dès 10 repas.","servesCuisine":["Mauricienne","Créole","Chinoise"],"priceRange":"À partir de 9 €","telephone":"+262692270237","email":"levinday974@gmail.com","address":{"@type":"PostalAddress","streetAddress":"140 route du Vieux Flamboyant, Bernica","addressLocality":"Saint-Paul","postalCode":"97435","addressCountry":"RE"},"geo":{"@type":"GeoCoordinates","latitude":-21.0383,"longitude":55.2792},"areaServed":{"@type":"AdministrativeArea","name":"La Réunion"},"sameAs":["https://www.facebook.com/levindaysnack","https://www.instagram.com/levindaysnack"]}
+{"@context":"https://schema.org","@type":"FoodEstablishment","name":"Le Vinday","logo":"https://capdepontromain-stack.github.io/levinday/images/logo-le-vinday.svg","image":"https://capdepontromain-stack.github.io/levinday/images/plateau-cuisine-mauricienne-riz-carri-reunion.jpg","description":"Traiteur mauricien, créole et chinois à Saint-Paul, La Réunion. Repas, buffets et box pour entreprises, événements et particuliers, livraison sur toute l'île de 10 à 400 personnes. Boissons avec et sans alcool, tous régimes alimentaires.","servesCuisine":["Mauricienne","Créole","Chinoise"],"priceRange":"€","telephone":"+262692270237","email":"levinday974@gmail.com","address":{"@type":"PostalAddress","streetAddress":"140 route du Vieux Flamboyant, Bernica","addressLocality":"Saint-Paul","postalCode":"97435","addressCountry":"RE"},"geo":{"@type":"GeoCoordinates","latitude":-21.0383,"longitude":55.2792},"areaServed":{"@type":"AdministrativeArea","name":"La Réunion"},"sameAs":["https://www.facebook.com/levindaysnack","https://www.instagram.com/levindaysnack"]}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
 {"@type":"Question","name":"À partir de combien de repas livrez-vous ?","acceptedAnswer":{"@type":"Answer","text":"Nous livrons partout sur l'île de La Réunion à partir de 10 repas."}},
-{"@type":"Question","name":"Quel est le prix d'un repas ?","acceptedAnswer":{"@type":"Answer","text":"Nos prestations démarrent à partir de 9 € le repas. Le tarif exact dépend du menu choisi et du nombre de personnes."}},
-{"@type":"Question","name":"Proposez-vous des plats végétaliens ?","acceptedAnswer":{"@type":"Answer","text":"Oui, des options 100 % végétaliennes sont proposées. Précisez-le à la commande."}},
+{"@type":"Question","name":"Est-ce que c'est cher ?","acceptedAnswer":{"@type":"Answer","text":"Nos prix sont doux et nous nous adaptons à votre budget : de la simple barquette au repas complet avec entrée, plat, dessert et boissons. Demandez un devis gratuit."}},
+{"@type":"Question","name":"Proposez-vous des repas végétariens ou adaptés à un régime ?","acceptedAnswer":{"@type":"Answer","text":"Oui : végétarien, végétalien, sans porc, allergies ou autres régimes, nous adaptons le menu. Précisez-le à la commande."}},{"@type":"Question","name":"Proposez-vous des boissons et de l'alcool ?","acceptedAnswer":{"@type":"Answer","text":"Oui, nous fournissons les boissons, avec ou sans alcool : Le Vinday dispose de la licence pour servir de l'alcool."}},{"@type":"Question","name":"Jusqu'à combien de personnes pouvez-vous servir ?","acceptedAnswer":{"@type":"Answer","text":"De 10 à 400 personnes, partout à La Réunion."}},
 {"@type":"Question","name":"Travaillez-vous pour les particuliers ?","acceptedAnswer":{"@type":"Answer","text":"Oui : anniversaires, soirées entre amis, pique-niques, réunions de famille, dès 10 repas."}},
 {"@type":"Question","name":"Quelle cuisine proposez-vous ?","acceptedAnswer":{"@type":"Answer","text":"De la cuisine mauricienne avant tout, comme les mine frites et le riz frit, avec aussi des plats réunionnais, créoles et chinois."}},
 {"@type":"Question","name":"Faites-vous des buffets et des cocktails ?","acceptedAnswer":{"@type":"Answer","text":"Oui : petits pains garnis, mini pizzas, feuilletés, pilons et brochettes panés, plateaux de fruits. Composez votre buffet avec nous."}}]}
@@ -232,13 +245,13 @@ footer{padding-bottom:100px}}
 <section class="special"><div class="wrap">
 <div>
 <h1 class="big">Cuisine mauricienne<span class="script">faite maison</span></h1>
-<p>Mine frites, riz frit, carris, buffets et box repas. Pour vos équipes, vos événements et vos fêtes en famille, livrés partout à La Réunion.</p>
+<p>Mine frites, riz frit, carris, buffets et box repas. Des petits prix, un menu adapté à votre budget, de 10 à 400 personnes, livrés partout à La Réunion.</p>
 <div class="cta"><a class="btn btn-r" href="#formules">Composer ma commande</a><a class="btn btn-o" href="#carte">Voir la carte</a></div>
 </div>
 <div class="dishwheel" aria-hidden="true">
 <svg class="ring" viewBox="0 0 400 400"><defs><path id="circ" d="M200,200 m-178,0 a178,178 0 1,1 356,0 a178,178 0 1,1 -356,0"/></defs><text><textPath href="#circ">mine frites • riz frit • carri • fait maison • saveurs de Maurice • </textPath></text></svg>
 <div class="plate"><img src="images/plateau-cuisine-mauricienne-riz-carri-reunion.jpg" width="800" height="900" alt=""></div>
-<div class="tag">dès 9 €</div>
+<div class="tag">petits prix</div>
 </div>
 </div></section>
 
@@ -247,7 +260,7 @@ footer{padding-bottom:100px}}
 <img src="images/box-repas-mauricien-livre-reunion.jpg" width="797" height="900" alt="Box repas du Vinday" fetchpriority="high">
 <div class="wrap">
 <h2 class="big">Le Vinday<span class="script">traiteur mauricien à Saint-Paul</span></h2>
-<p>Entreprises, événements, particuliers : on cuisine, on livre, vous vous régalez. Dès 10 repas, partout sur l'île.</p>
+<p>Entreprises, événements, particuliers : on cuisine, on livre, vous vous régalez. De 10 à 400 personnes, partout sur l'île.</p>
 <div class="pills">
 <a href="#formules" class="hl">Commander</a><a href="#livraison">Ouest</a><a href="#livraison">Sud</a><a href="#livraison">Nord</a><a href="#livraison">Est</a><a href="#carte">La carte</a>
 </div>
@@ -258,8 +271,8 @@ footer{padding-bottom:100px}}
 <div class="strip">
 <div class="pattern" aria-hidden="true"><svg viewBox="0 0 220 160" preserveAspectRatio="xMidYMid slice"><g font-family="Bowlby One" font-size="30"><text x="-20" y="34" fill="#EA2839">MINE MINE</text><text x="-50" y="72" fill="#1A206D">FRITES FRITES</text><text x="-10" y="110" fill="#00A551">MINE MINE</text><text x="-40" y="148" fill="#EA2839">FRITES FRITES</text></g></svg></div>
 <div class="infos">
-<div><h3>Livraison</h3><p>Toute l'île<br><b>dès 10 repas</b></p></div>
-<div><h3>Petits prix</h3><p>À partir de<br><b>9 € le repas</b></p></div>
+<div><h3>Livraison</h3><p>Toute l'île<br><b>de 10 à 400 pers.</b></p></div>
+<div><h3>Petits prix</h3><p>On s'adapte<br><b>à votre budget</b></p></div>
 <div><h3>Fait maison</h3><p>Cuisiné à Bernica<br><b>avec amour ♥</b></p></div>
 </div>
 <div class="pattern r" aria-hidden="true"><svg viewBox="0 0 220 160" preserveAspectRatio="xMidYMid slice"><g font-family="Bowlby One" font-size="30"><text x="-30" y="34" fill="#1A206D">RIZ FRIT RIZ</text><text x="-5" y="72" fill="#EA2839">RIZ FRIT RIZ</text><text x="-40" y="110" fill="#1A206D">RIZ FRIT RIZ</text><text x="-15" y="148" fill="#00A551">RIZ FRIT RIZ</text></g></svg></div>
@@ -267,7 +280,7 @@ footer{padding-bottom:100px}}
 
 <!-- Commande guidée -->
 <section class="order" id="formules"><div class="wrap">
-<div class="title rv"><span class="bar">Commande guidée</span><h2>Votre repas<span class="script">en 3 clics</span></h2><p>Choisissez une formule et le nombre de convives : votre demande part directement chez nous, sur WhatsApp ou par e-mail.</p></div>
+<div class="title rv"><span class="bar">Commande guidée</span><h2>Votre repas<span class="script">en quelques clics</span></h2><p>Choisissez une formule, le nombre de convives et ce que vous voulez au menu : votre demande part directement chez nous, sur WhatsApp ou par e-mail. Devis gratuit, adapté à votre budget.</p></div>
 
 <p class="stepl"><i>1</i>Choisissez votre formule</p>
 <div class="formules">
@@ -277,7 +290,7 @@ footer{padding-bottom:100px}}
 <span class="desc">Des box individuelles complètes, livrées sur votre lieu de travail.</span>
 <span class="ideal">Idéal pour</span>
 <ul><li>Déjeuners d'équipe</li><li>Réunions et formations</li><li>Chantiers et séminaires</li></ul>
-<span class="foot"><span><small>À partir de</small><strong>9 €<span> /repas</span></strong></span><span class="choose">Choisir</span></span>
+<span class="foot"><span><small>Petits prix</small><strong class="soft">Selon votre budget</strong></span><span class="choose">Choisir</span></span>
 </button>
 <button type="button" class="f" data-f="Buffet et cocktail">
 <span class="ph"><img src="images/mini-pizzas-buffet-traiteur-reunion.jpg" width="900" height="607" alt="" loading="lazy"></span>
@@ -285,7 +298,7 @@ footer{padding-bottom:100px}}
 <span class="desc">Plateaux à partager : petits pains, feuilletés, mini pizzas, panés, fruits.</span>
 <span class="ideal">Idéal pour</span>
 <ul><li>Inaugurations et soirées</li><li>Pots de départ</li><li>Fêtes associatives</li></ul>
-<span class="foot"><span><small>À partir de</small><strong>9 €<span> /pers.</span></strong></span><span class="choose">Choisir</span></span>
+<span class="foot"><span><small>Petits prix</small><strong class="soft">Selon votre budget</strong></span><span class="choose">Choisir</span></span>
 </button>
 <button type="button" class="f" data-f="Fête en famille">
 <span class="ph"><img src="images/plateau-cuisine-mauricienne-riz-carri-reunion.jpg" width="800" height="900" alt="" loading="lazy"></span>
@@ -293,34 +306,58 @@ footer{padding-bottom:100px}}
 <span class="desc">Les plats mauriciens et créoles que tout le monde aime, en grande quantité.</span>
 <span class="ideal">Idéal pour</span>
 <ul><li>Anniversaires</li><li>Soirées entre amis</li><li>Pique-niques</li></ul>
-<span class="foot"><span><small>À partir de</small><strong>9 €<span> /pers.</span></strong></span><span class="choose">Choisir</span></span>
+<span class="foot"><span><small>Petits prix</small><strong class="soft">Selon votre budget</strong></span><span class="choose">Choisir</span></span>
 </button>
 </div>
 
 <p class="stepl" style="margin-top:46px"><i>2</i>Combien de convives ?</p>
 <div class="qty">
-<button type="button" class="q on" data-q="10 à 20"><span class="band" style="background:var(--green)">Petit comité</span><strong>10-20</strong><small>personnes</small></button>
-<button type="button" class="q" data-q="20 à 50"><span class="band" style="background:var(--blue)">Équipe</span><strong>20-50</strong><small>personnes</small></button>
-<button type="button" class="q" data-q="50 à 100"><span class="band" style="background:var(--red)">Événement</span><strong>50-100</strong><small>personnes</small></button>
-<button type="button" class="q" data-q="plus de 100"><span class="band" style="background:var(--navy)">Grand format</span><strong>100+</strong><small>personnes</small></button>
+<button type="button" class="q on" data-q="10 à 30"><span class="band" style="background:var(--green)">Petit comité</span><strong>10-30</strong><small>personnes</small></button>
+<button type="button" class="q" data-q="30 à 100"><span class="band" style="background:var(--blue)">Équipe</span><strong>30-100</strong><small>personnes</small></button>
+<button type="button" class="q" data-q="100 à 200"><span class="band" style="background:var(--red)">Événement</span><strong>100-200</strong><small>personnes</small></button>
+<button type="button" class="q" data-q="200 à 400"><span class="band" style="background:var(--navy)">Grand format</span><strong>200-400</strong><small>personnes</small></button>
 </div>
 
-<p class="stepl" style="margin-top:46px"><i>3</i>Quand et où ?</p>
+<p class="stepl" style="margin-top:46px"><i>3</i>Que voulez-vous au menu ?</p>
+<div class="opts">
+<button type="button" class="o" data-o="Barquette simple">🥡 Barquette simple</button>
+<button type="button" class="o" data-o="Entrée">🥗 Entrée</button>
+<button type="button" class="o on" data-o="Plat">🍛 Plat</button>
+<button type="button" class="o" data-o="Dessert">🍍 Dessert</button>
+<button type="button" class="o" data-o="Boissons">🥤 Boissons</button>
+<button type="button" class="o" data-o="Alcool">🍷 Alcool</button>
+<button type="button" class="o" data-o="Végétarien">🌱 Végétarien</button>
+<button type="button" class="o" data-o="Autre régime (à préciser)">✋ Autre régime</button>
+</div>
+<p class="optnote">Plusieurs choix possibles. On compose le menu selon votre budget.</p>
+<p class="stepl" style="margin-top:46px"><i>4</i>Quand et où ?</p>
 <div class="form">
 <label>Date<input type="date" id="d"></label>
 <label>Commune de livraison<input type="text" id="c" placeholder="Ex. : Saint-Paul"></label>
 <label>Votre prénom<input type="text" id="n" placeholder="Ex. : Marie"></label>
 </div>
 <div class="recap">
-<p id="rtxt">Formule <b>Box repas entreprise</b>, <b>10 à 20</b> personnes.</p>
+<p id="rtxt">Formule <b>Box repas entreprise</b>, <b>10 à 30</b> personnes, menu : <b>Plat</b>.</p>
 <div class="btns"><a class="btn btn-g" id="wa" href="https://wa.me/262692270237" rel="noopener">💬 Envoyer sur WhatsApp</a><a class="btn btn-y" id="ml" href="mailto:levinday974@gmail.com">✉️ Par e-mail</a></div>
 </div>
 
 <div class="reassure">
 <div><h3>⏱ Livré à l'heure</h3><p>Vos repas arrivent prêts à servir, sur le lieu choisi.</p></div>
-<div><h3>🌱 Végétalien possible</h3><p>Des options 100 % végétaliennes pour tous vos convives.</p></div>
-<div><h3>📋 Menu sur mesure</h3><p>On adapte le menu à votre budget et à vos envies.</p></div>
+<div><h3>🌱 Tous les régimes</h3><p>Végétarien, végétalien, sans porc, allergies : on adapte le menu.</p></div>
+<div><h3>💰 Votre budget</h3><p>Petits prix : on compose le menu selon votre budget.</p></div>
 </div>
+</div></section>
+
+<!-- Selon votre budget -->
+<section class="budget"><div class="wrap">
+<div class="title rv"><span class="bar">Selon votre budget</span><h2>De la barquette<span class="script">au repas complet</span></h2><p>Pas cher et sur mesure : vous choisissez ce que vous voulez, on s'adapte à votre budget. De 10 à 400 personnes, livré partout sur l'île.</p></div>
+<div class="b4">
+<div class="bc rv" style="--c:var(--green)"><span class="ic">🥡</span><h3>Simple barquette</h3><p>Un plat chaud, généreux, en barquette individuelle. La solution la plus économique pour nourrir tout le monde.</p></div>
+<div class="bc rv" style="--c:var(--red)"><span class="ic">🍽️</span><h3>Entrée, plat, dessert</h3><p>Le repas complet, à la mauricienne et à la réunionnaise, pour les déjeuners et les grandes occasions.</p></div>
+<div class="bc rv" style="--c:var(--blue)"><span class="ic">🍷</span><h3>Boissons et alcool</h3><p>Softs, jus et boissons alcoolisées : Le Vinday dispose de la licence pour servir de l'alcool.</p></div>
+<div class="bc rv" style="--c:var(--yellow)"><span class="ic">🌱</span><h3>Tous les régimes</h3><p>Végétarien, végétalien, sans porc, allergies : dites-nous, on adapte le menu à chaque convive.</p></div>
+</div>
+<p class="evin">L'abus d'alcool est dangereux pour la santé, à consommer avec modération.</p>
 </div></section>
 
 <!-- Buffet type -->
@@ -334,8 +371,8 @@ footer{padding-bottom:100px}}
 </div></section>
 
 <div class="nums"><div class="wrap">
-<div class="rv"><strong>9 €</strong><span>À partir de</span><p>Toutes les formules, du repas simple au grand buffet.</p></div>
-<div class="rv"><strong>10</strong><span>Repas minimum</span><p>Pour une livraison partout sur l'île.</p></div>
+<div class="rv"><strong>400</strong><span>Personnes</span><p>De 10 à 400 convives, partout sur l'île.</p></div>
+<div class="rv"><strong>€</strong><span>Petits prix</span><p>De la simple barquette au repas complet, selon votre budget.</p></div>
 <div class="rv"><strong>3</strong><span>Cuisines</span><p>Mauricienne, créole et chinoise, réunies à table.</p></div>
 </div></div>
 
@@ -354,7 +391,7 @@ footer{padding-bottom:100px}}
 </div>
 <div class="specials">
 <div class="sp rv"><span class="ic">🍜</span><div><h3>Mine frites et riz frit</h3><p>Les grands classiques mauriciens, sautés au wok.</p></div></div>
-<div class="sp rv"><span class="ic">🌱</span><div><h3>100 % végétalien</h3><p>Pour que personne ne soit oublié à table.</p></div></div>
+<div class="sp rv"><span class="ic">🌱</span><div><h3>Végétarien et régimes</h3><p>Végétarien, végétalien, sans porc : personne n'est oublié à table.</p></div></div>
 <div class="sp rv"><span class="ic">🍛</span><div><h3>Créole et chinois</h3><p>La touche péi et les saveurs d'Asie.</p></div></div>
 </div>
 </div></section>
@@ -362,13 +399,13 @@ footer{padding-bottom:100px}}
 <!-- Collage -->
 <div class="collage">
 <figure><img src="images/petits-pains-garnis-poulet-traiteur-reunion.jpg" width="800" height="900" alt="Petits pains garnis" loading="lazy"></figure>
-<div class="mid"><h2>On vous<span class="script">régale !</span></h2><p>Un repas pour 10 ou pour 200 : dites-nous tout, on s'occupe du reste.</p><a class="btn btn-y" href="#formules">Composer ma commande</a></div>
+<div class="mid"><h2>On vous<span class="script">régale !</span></h2><p>De 10 à 400 personnes, de la barquette au repas complet : dites-nous tout, on s'occupe du reste.</p><a class="btn btn-y" href="#formules">Composer ma commande</a></div>
 <figure><img src="images/pilons-poulet-pane-buffet-traiteur-reunion.jpg" width="719" height="900" alt="Pilons panés" loading="lazy"></figure>
 </div>
 
 <!-- Livraison -->
 <section id="livraison"><div class="wrap">
-<div class="title rv"><span class="bar">Livraison</span><h2>De Saint-Paul<span class="script">à toute l'île</span></h2><p>Notre cuisine est à Bernica, dans les hauts de Saint-Gilles. Nous livrons partout à La Réunion à partir de 10 repas.</p></div>
+<div class="title rv"><span class="bar">Livraison</span><h2>De Saint-Paul<span class="script">à toute l'île</span></h2><p>Notre cuisine est à Bernica, dans les hauts de Saint-Gilles. Nous livrons partout à La Réunion, de 10 à 400 personnes.</p></div>
 <div class="chips rv"><span class="hl">Saint-Paul</span><span>Saint-Gilles</span><span>Saint-Leu</span><span>Le Port</span><span>La Possession</span><span>Saint-Denis</span><span>Sainte-Marie</span><span>Saint-André</span><span>Saint-Benoît</span><span>Saint-Pierre</span><span>Le Tampon</span><span>Saint-Louis</span><span class="hl">Et partout ailleurs</span></div>
 </div></section>
 
@@ -376,12 +413,14 @@ footer{padding-bottom:100px}}
 <section id="faq" style="padding-top:0"><div class="wrap">
 <div class="title rv"><span class="bar">Questions</span><h2>Vous vous<span class="script">demandez peut-être</span></h2></div>
 <div class="faq">
-<details open><summary>À partir de combien de repas livrez-vous ?</summary><p>À partir de 10 repas, partout sur l'île.</p></details>
-<details><summary>Quel est le prix d'un repas ?</summary><p>Nos prestations démarrent à 9 € le repas. Le tarif exact dépend du menu et du nombre de personnes : demandez un devis.</p></details>
+<details open><summary>À partir de combien de repas livrez-vous ?</summary><p>À partir de 10 repas, et jusqu'à 400 personnes, partout sur l'île.</p></details>
+<details><summary>Est-ce que c'est cher ?</summary><p>Non : nos prix sont doux et nous nous adaptons à votre budget, de la simple barquette au repas complet avec entrée, plat, dessert et boissons. Le devis est gratuit.</p></details>
+<details><summary>Jusqu'à combien de personnes pouvez-vous servir ?</summary><p>De 10 à 400 personnes, partout à La Réunion.</p></details>
+<details><summary>Proposez-vous des boissons et de l'alcool ?</summary><p>Oui, nous fournissons les boissons, avec ou sans alcool : Le Vinday dispose de la licence pour servir de l'alcool. <em>L'abus d'alcool est dangereux pour la santé, à consommer avec modération.</em></p></details>
 <details><summary>Quelle cuisine proposez-vous ?</summary><p>De la cuisine mauricienne avant tout (mine frites, riz frit, carris), avec aussi des plats réunionnais, créoles et chinois.</p></details>
 <details><summary>Faites-vous des buffets et des cocktails ?</summary><p>Oui : petits pains garnis, mini pizzas, feuilletés, pilons et brochettes panés, plateaux de fruits. Composez votre buffet avec nous.</p></details>
-<details><summary>Proposez-vous des plats végétaliens ?</summary><p>Oui, des options 100 % végétaliennes sont disponibles. Précisez-le simplement à la commande.</p></details>
-<details><summary>Travaillez-vous pour les particuliers ?</summary><p>Oui : anniversaires, soirées, pique-niques, repas de famille, dès 10 repas.</p></details>
+<details><summary>Proposez-vous des repas végétariens ou adaptés à un régime ?</summary><p>Oui : végétarien, végétalien, sans porc, allergies ou autres régimes, nous adaptons le menu. Précisez-le simplement à la commande.</p></details>
+<details><summary>Travaillez-vous pour les particuliers ?</summary><p>Oui : anniversaires, soirées, pique-niques, repas de famille, dès 10 repas. Une simple barquette ou un repas complet, selon votre budget.</p></details>
 </div></div></section>
 
 <!-- Contact -->
@@ -397,7 +436,7 @@ footer{padding-bottom:100px}}
 
 <footer><div class="wrap">
 <a href="#" class="brand"><img src="images/logo-le-vinday.svg" width="60" height="60" alt="Le Vinday"><span style="color:#fff">LE VINDAY<br><small style="font-family:Outfit;font-size:.8rem;color:#b9bcd9;letter-spacing:0">Traiteur mauricien · Saint-Paul, La Réunion</small></span></a>
-<div><a href="https://www.facebook.com/levindaysnack" rel="noopener">Facebook</a> · <a href="https://www.instagram.com/levindaysnack" rel="noopener">Instagram</a><br>levinday974@gmail.com · 06 92 27 02 37</div>
+<div><a href="https://www.facebook.com/levindaysnack" rel="noopener">Facebook</a> · <a href="https://www.instagram.com/levindaysnack" rel="noopener">Instagram</a><br>levinday974@gmail.com · 06 92 27 02 37<br><small>L'abus d'alcool est dangereux pour la santé, à consommer avec modération.</small></div>
 </div></footer>
 
 <div class="callbar"><a class="a" href="tel:+262692270237">📞 Appeler</a><a class="b" href="https://wa.me/262692270237">💬 WhatsApp</a></div>
@@ -409,15 +448,16 @@ var lb=document.getElementById('lb');
 document.querySelectorAll('.dish .ph').forEach(function(f){f.onclick=function(){lb.firstChild.src=f.querySelector('img').src;lb.classList.add('on')}});
 lb.onclick=function(){lb.classList.remove('on')};
 // commande guidée
-var st={f:'Box repas entreprise',q:'10 à 20'};
+var st={f:'Box repas entreprise',q:'10 à 30',o:['Plat']};
 function pick(sel,key,attr){document.querySelectorAll(sel).forEach(function(b){b.onclick=function(){document.querySelectorAll(sel).forEach(function(x){x.classList.remove('on')});b.classList.add('on');st[key]=b.getAttribute(attr);upd()}})}
-pick('.f','f','data-f');pick('.q','q','data-q');
+pick('.f','f','data-f');
+document.querySelectorAll('.o').forEach(function(b){b.onclick=function(){b.classList.toggle('on');st.o=[].map.call(document.querySelectorAll('.o.on'),function(x){return x.getAttribute('data-o')});upd()}});pick('.q','q','data-q');
 ['d','c','n'].forEach(function(id){document.getElementById(id).addEventListener('input',upd)});
 function upd(){
 var d=document.getElementById('d').value,c=document.getElementById('c').value.trim(),n=document.getElementById('n').value.trim();
 var df=d?new Date(d+'T12:00').toLocaleDateString('fr-FR',{weekday:'long',day:'numeric',month:'long'}):'';
-document.getElementById('rtxt').innerHTML='Formule <b>'+st.f+'</b>, <b>'+st.q+'</b> personnes'+(df?', le <b>'+df+'</b>':'')+(c?', à <b>'+c.replace(/</g,'')+'</b>':'')+'.';
-var msg='Bonjour Le Vinday,'+(n?' je suis '+n+'.':'')+'\nJe souhaite un devis :\n- Formule : '+st.f+'\n- Convives : '+st.q+' personnes'+(df?'\n- Date : '+df:'')+(c?'\n- Livraison : '+c:'')+'\nMerci !';
+document.getElementById('rtxt').innerHTML='Formule <b>'+st.f+'</b>, <b>'+st.q+'</b> personnes'+(st.o.length?', menu : <b>'+st.o.join(', ')+'</b>':'')+(df?', le <b>'+df+'</b>':'')+(c?', à <b>'+c.replace(/</g,'')+'</b>':'')+'.';
+var msg='Bonjour Le Vinday,'+(n?' je suis '+n+'.':'')+'\nJe souhaite un devis :\n- Formule : '+st.f+'\n- Convives : '+st.q+' personnes'+(st.o.length?'\n- Menu : '+st.o.join(', '):'')+(df?'\n- Date : '+df:'')+(c?'\n- Livraison : '+c:'')+'\nMerci !';
 document.getElementById('wa').href='https://wa.me/262692270237?text='+encodeURIComponent(msg);
 document.getElementById('ml').href='mailto:levinday974@gmail.com?subject='+encodeURIComponent('Demande de devis : '+st.f)+'&body='+encodeURIComponent(msg);
 }
